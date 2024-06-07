@@ -71,7 +71,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.17.0)
       msgpack (~> 1.2)
-    builder (3.2.4)
+    builder (3.3.0)
     capybara (3.39.2)
       addressable
       matrix
@@ -81,7 +81,7 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
-    concurrent-ruby (1.2.2)
+    concurrent-ruby (1.3.1)
     crass (1.0.6)
     date (3.3.4)
     debug (1.8.0)
@@ -90,7 +90,7 @@ GEM
     erubi (1.12.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
-    i18n (1.14.1)
+    i18n (1.14.5)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.2.3)
       actionpack (>= 6.0.0)
@@ -115,7 +115,7 @@ GEM
     matrix (0.4.2)
     method_source (1.0.0)
     mini_mime (1.1.5)
-    minitest (5.20.0)
+    minitest (5.23.1)
     msgpack (1.7.2)
     net-imap (0.4.7)
       date
@@ -127,15 +127,17 @@ GEM
     net-smtp (0.4.0)
       net-protocol
     nio4r (2.7.0)
-    nokogiri (1.15.5-x64-mingw-ucrt)
+    nokogiri (1.16.5-x64-mingw-ucrt)
+      racc (~> 1.4)
+    nokogiri (1.16.5-x86_64-linux)
       racc (~> 1.4)
     psych (5.1.1.1)
       stringio
     public_suffix (5.0.4)
     puma (5.6.7)
       nio4r (~> 2.0)
-    racc (1.7.3)
-    rack (2.2.8)
+    racc (1.8.0)
+    rack (2.2.9)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.8)
@@ -181,11 +183,12 @@ GEM
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
-    sprockets-rails (3.4.2)
-      actionpack (>= 5.2)
-      activesupport (>= 5.2)
+    sprockets-rails (3.5.0)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
       sprockets (>= 3.0.0)
     sqlite3 (1.6.9-x64-mingw-ucrt)
+    sqlite3 (1.6.9-x86_64-linux)
     stimulus-rails (1.3.0)
       railties (>= 6.0.0)
     stringio (3.1.0)
@@ -214,6 +217,7 @@ GEM
 
 PLATFORMS
   x64-mingw-ucrt
+  x86_64-linux
 
 DEPENDENCIES
   bootsnap
@@ -224,7 +228,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.8)
   selenium-webdriver
-  sprockets-rails
+  sprockets-rails (>= 3.5.0)
   sqlite3 (~> 1.4)
   stimulus-rails
   turbo-rails
@@ -235,4 +239,4 @@ RUBY VERSION
    ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.10
+   2.4.6
